@@ -1,0 +1,19 @@
+{
+  "name": "bestbuy",
+  "version": "0.0.1",
+  "authors": [
+    "vcardins <vcardins@gmail.com>"
+  ],
+  "description": "BBYC - MVC ASSESMENT",
+  "main": "src/js/bestbuy.core.store.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "bestbuy",
+    "exercise"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.org/vcardins/bestbuy",
+  "private": true
+}

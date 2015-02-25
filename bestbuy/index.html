@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BBYC - MVC ASSESMENT</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/jsmodal-dark.css">
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="sidebar"></div>
+			<div id="content">
+				<div class="spinner"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="libs/mustache.min.js"></script>	
+		<script type="text/javascript" src="libs/jsmodal-1.0d.min.js"></script>	
+		<script type="text/javascript" src="libs/promise.js"></script>	
+
+		<script type="text/javascript" src="app/bestbuy.config.js"></script>
+		<script type="text/javascript" src="app/bestbuy.utils.common.js"></script>
+		<script type="text/javascript" src="app/bestbuy.utils.dom.js"></script>
+		<script type="text/javascript" src="app/bestbuy.utils.jsonp.js"></script>
+		<script type="text/javascript" src="app/bestbuy.data.store.js"></script>	
+		<script type="text/javascript" src="app/bestbuy.core.store.js"></script>
+		<script type="text/javascript">
+			BestBuy.Core.Store.init(location.hash.hashParam());
+		</script>
+
+		<script id="productDetail" type="text/html">
+			<div style="">
+				<div>
+					<h2>{{name}}</h2>
+					<div class="image">
+						<a href="{{productUrl}}" target="_blank" title="{{name}}">
+							<img src="{{domainUrl}}{{thumbnailImage}}"/>
+						</a>
+					</div>
+					<div>{{shortDescription}}</div>
+				</div>
+			</div>
+		</script>
+		
+	</body>
+</html>
