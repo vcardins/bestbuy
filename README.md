@@ -38,12 +38,11 @@ The structure also contains a server.js can serve the app using node. Feel free 
 ### Design Patterns
 The modules were organized into namespaces and implemented by using the The Revealing Module Pattern, where we ["define all of our functions and variables in the private scope and return an anonymous object with pointers to the private functionality we wished to reveal as public."](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript)
 
-### Strategies
-1. Readability and simplicity was in mind from the very beginning;
-2. Collections were managed in memory to avoid multiple trips to the api; 
-3. Most of the HTML elements were created by manipulating the DOM instead of writing the tags in order to demonstrate knowledge;
-4. Avoided in code comments due to the simplicity of the app; 
-5. Added simple loading spinner to promote the "illusion" of quickness;  
+### Strategies/Features
+1. Collections were managed in memory to avoid multiple trips to the api; 
+2. Most of the HTML elements were created by manipulating the DOM instead of writing the tags in order to demonstrate knowledge;
+3. Lack of comments in the code was due to the simplicity of the app; 
+4. Added simple loading spinner to promote the "illusion" of quickness;  
 
 ### The Modules
 The app has 4 main custom modules 
@@ -79,4 +78,8 @@ The `Util.JSONP` module handles external cross domain calls.
 ##### Utils.Common Module
 The `Utils.Common` module contains miscellaneous helpers that assists on various purposes.
 
-## TODO
+## Enhancements (TODO)
+
+* Depedency management tool eg. `RequireJs`, `Browserify`;
+* Use of websockets for real time updates (in memory objects collections management);
+* Increase tests converage;
