@@ -19,6 +19,7 @@
 1. Run `node server`
 
 2. Open the url [http://localhost:8886/](http://localhost:8886/)
+3. [Live Demo](http://vcardins.github.io/bestbuy/) - http://vcardins.github.io/bestbuy/
 
 ## Exploring BBYC - MVC
 BBYC-MVC OO Javascript
